@@ -81,9 +81,9 @@ then
 	./bootstrap
 	popd
 	popd
-elif lsb_release -d | grep -q "Debian"
+elif lsb_release -d | grep -q "Parrot OS"
 then
-	Release=Debian
+	Release=ParrotOS
 	apt-get update -y
 	apt-get install -y dnsmasq libssl1.0-dev libnfnetlink-dev libnl-genl-3-dev build-essential gcc wireshark tcpdump python-setuptools ca-certificates git make wget libnl-3-dev pkg-config
         easy_install pip
